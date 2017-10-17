@@ -26,7 +26,7 @@ scalacOptions ++= {
   }
 }
 
-seq(bintraySettings:_*)
+Seq(bintraySettings:_*)
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
