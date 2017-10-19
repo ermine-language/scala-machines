@@ -3,10 +3,12 @@ jdk:
   - openjdk6
   - openjdk7
   - oraclejdk7
+  - oraclejdk8
 scala:
   - 2.10.6
   - 2.11.8
+  - 2.12.3
 matrix:
-  include:
-  - scala: 2.12.0-RC1
-    jdk: oraclejdk8
+  exclude:
+    - jdk: openjdk7
+      scala: 2.12.3
